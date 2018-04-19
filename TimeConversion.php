@@ -34,26 +34,23 @@ function getTimeConversion($timestamp1,$timestamp2 = false) {
     $hourDiff = $diff / HOUR;
     $minDiff = $diff / MINUTE;
     $result = [];
+    
     if ($yearDiff >= 1) {
         $result['before'] = intval($yearDiff) . "年前";
         $result['after'] = intval($yearDiff) . "年后";
     } else if ($monthDiff >= 1) {
         $result['before'] = intval($monthDiff) . "月前";
         $result['after'] = intval($monthDiff) . "月后";
-    }
-    else if ($weekDiff >= 1) {
+    } else if ($weekDiff >= 1) {
         $result['before'] = intval($weekDiff) . "周前";
         $result['after'] = intval($weekDiff) . "周后";
-    }
-    else if ($dayDiff >= 1) {
+    } else if ($dayDiff >= 1) {
         $result['before'] = intval($dayDiff) . "天前";
         $result['after'] = intval($dayDiff) . "天后";
-    }
-    else if ($hourDiff >= 1) {
+    } else if ($hourDiff >= 1) {
         $result['before'] = intval($hourDiff) . "小时前";
         $result['after'] = intval($hourDiff) . "小时后";
-    }
-    else if ($minDiff >= 1) {
+    } else if ($minDiff >= 1) {
         $result['before'] = intval($minDiff) . "分钟前";
         $result['after'] = intval($minDiff) . "分钟后";
     } else {

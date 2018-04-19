@@ -34,7 +34,7 @@ function getTimeConversion($timestamp1,$timestamp2 = false) {
     $hourDiff = $diff / HOUR;
     $minDiff = $diff / MINUTE;
     $result = [];
-    
+
     if ($yearDiff >= 1) {
         $result['before'] = intval($yearDiff) . "年前";
         $result['after'] = intval($yearDiff) . "年后";

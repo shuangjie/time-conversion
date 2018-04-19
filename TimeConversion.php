@@ -19,7 +19,7 @@ CONST YEAR = MONTH * 12;
 
 function getTimeConversion($timestamp1,$timestamp2 = false) {
 
-    $timestamp2 = $timestamp2 || time()/ 1000;
+    $timestamp2 = $timestamp2 || time();
     $diff = $timestamp1 - $timestamp2;
     if ($diff > 0) {
         $diff = $timestamp1 - $timestamp2;
@@ -56,8 +56,8 @@ function getTimeConversion($timestamp1,$timestamp2 = false) {
     } else {
         $result['before'] = $result['after'] = "刚刚";
     }
+    
     return $result;
-
 }
 
 

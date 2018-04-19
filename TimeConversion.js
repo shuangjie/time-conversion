@@ -37,20 +37,16 @@ function getTimeConversion (timeStamp1, timeStamp2) {
     } else if (monthDiff >= 1) {
         result['before'] = parseInt(monthDiff) + "月前";
         result['after'] = parseInt(monthDiff) + "月后";
-    }
-    else if (weekDiff >= 1) {
+    } else if (weekDiff >= 1) {
         result['before'] = parseInt(weekDiff) + "周前";
         result['after'] = parseInt(weekDiff) + "周后";
-    }
-    else if (dayDiff >= 1) {
+    } else if (dayDiff >= 1) {
         result['before'] = parseInt(dayDiff) + "天前";
         result['after'] = parseInt(dayDiff) + "天后";
-    }
-    else if (hourDiff >= 1) {
+    } else if (hourDiff >= 1) {
         result['before'] = parseInt(hourDiff) + "小时前";
         result['after'] = parseInt(hourDiff) + "小时后";
-    }
-    else if (minDiff >= 1) {
+    } else if (minDiff >= 1) {
         result['before'] = parseInt(minDiff) + "分钟前";
         result['after'] = parseInt(minDiff) + "分钟后";
     } else {

@@ -13,6 +13,7 @@ function getTimeConversion (timeStamp1, timeStamp2) {
     var minute = 60;
     var hour = minute * 60;
     var day = hour * 24;
+    var week = day * 7;
     var month = day * 30;
     var year = month * 12;
     var dateTimeStamp1 = timeStamp1;
@@ -26,7 +27,7 @@ function getTimeConversion (timeStamp1, timeStamp2) {
 
     var yearDiff = diff / year;
     var monthDiff = diff / month;
-    var weekDiff = diff / (7 * day);
+    var weekDiff = diff / week;
     var dayDiff = diff / day;
     var hourDiff = diff / hour;
     var minDiff = diff / minute;
